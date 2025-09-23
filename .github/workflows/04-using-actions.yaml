@@ -1,0 +1,12 @@
+name: 04 - using actions
+on: 
+  workflow-dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/Checkout@v4
+      - name: show directories
+        run: ls 04-using-actions/react-app/
