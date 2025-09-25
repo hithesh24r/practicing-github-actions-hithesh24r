@@ -23,7 +23,7 @@ jobs:
           "Job env var: ${{ vars.JOB_VAR }}"
           "Workflow env var: ${{ vars.WORKFLOW_VAR }}"
           "Overwritten: ${{ vars.OVERWRITTEN }}"
-      - name: 
+      - name: Overwrite Job Variable
         env:
           OVERWRITTEN: 'I have been overwritten at the step level'
         run: |
