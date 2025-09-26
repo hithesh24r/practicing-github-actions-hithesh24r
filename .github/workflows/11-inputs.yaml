@@ -1,0 +1,10 @@
+name: 11 - Inputs
+on:
+  workflow_dispatch:
+
+jobs:
+  hello-world:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "hello_world"
+        run: echo "hello-world"
