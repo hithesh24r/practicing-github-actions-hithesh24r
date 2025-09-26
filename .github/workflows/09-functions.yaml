@@ -1,9 +1,22 @@
 name: 09 - Functions
-on: workflow_dispatch
+on: 
+  workflow_dispatch:
+  pull_request:
+
 jobs:
   echo1:
     runs-on: ubuntu-latest
     steps:
+      - name: Print PR Title
+        run: echo "${{ github.event.pull_request.title }}"
+      
+      - name: Print PR Labels
+        run:  echo "${{ toJson(github.event.pull_request.labels) }}"
+
+      - name: Bug Step
+        if: ${{failure() && !cancelled() && contains(github.event.pull_request.labels, 'fix')}}
+        run: 
+
       - name: Sleep for 20 seconds
         run: |
           sleep 20
