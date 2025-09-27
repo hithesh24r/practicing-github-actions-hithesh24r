@@ -30,7 +30,7 @@ jobs:
         id: cache-key
         working-directory: 13-caching/react-app
         run: |
-          echo "CACHE_KEY:deps-node-modules-${{ hashFiles('13-caching/react-app/package-lock.json') }}" >> "$GITHUB_OUTPUT"
+          echo "CACHE_KEY=deps-node-modules-${{ hashFiles('13-caching/react-app/package-lock.json') }}" >> "$GITHUB_OUTPUT"
 
       - name: "Download cached dependencies"
         id: cache
