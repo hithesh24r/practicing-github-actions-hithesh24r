@@ -69,6 +69,7 @@ jobs:
           key: "${{ needs.install-deps.outputs.deps-cache-key }}"
 
       - name: "Testing"
+        working-directory: 13-caching/react-app
         run: |
           npm run test
 
