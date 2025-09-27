@@ -33,6 +33,7 @@ jobs:
           npm run test
 
       - name: "Build Code"
+        working-directory: "14-artifacts/react-app"
         run: |
           npm run build
 
