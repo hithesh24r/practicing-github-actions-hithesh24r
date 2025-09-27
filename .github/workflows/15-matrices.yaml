@@ -16,7 +16,7 @@ jobs:
           - os: ubuntu-latest
             node-version: 21.x
             tag: experimental
-      fail-fast: true
+      fail-fast: false
 
     steps:
       - name: "setup-node"
