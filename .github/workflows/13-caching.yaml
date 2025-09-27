@@ -1,16 +1,6 @@
 name: 13 - Caching
 on: 
   workflow_dispatch:
-<<<<<<< HEAD
-
-jobs:
-  hello-world:
-    runs-on: ubuntu-latest
-    steps:
-      - name: "hello-world"
-        run: echo "hello-world"
-      
-=======
     inputs:
       use-cache:
         type: boolean
@@ -63,4 +53,3 @@ jobs:
       - name: "Deploying to nonprod"
         run: |
           echo "Deploying to nonprod"
->>>>>>> 13-caching
