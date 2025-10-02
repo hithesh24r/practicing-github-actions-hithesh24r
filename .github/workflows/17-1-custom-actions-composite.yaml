@@ -1,4 +1,4 @@
-name: 17-1-custom-actions-composite
+name: 17 - 1 - Custom Actions - Composite
 on: 
   workflow_dispatch:
 
