@@ -20,7 +20,7 @@ jobs:
     needs: deploy-staging
     steps:
       - name: "E2E Steps"
-        run: "Running E2E"
+        run: echo "Running E2E"
 
   deploy-prod:
     runs-on: ubuntu-latest
