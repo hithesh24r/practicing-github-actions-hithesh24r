@@ -1,1 +1,4 @@
 node_modules
+
+# As we need the ndoe modules to be comitted under the actions folder to make sure that our custom actions work, we are exclusing those from gitignore
+!.github/actions/**/node_modules
