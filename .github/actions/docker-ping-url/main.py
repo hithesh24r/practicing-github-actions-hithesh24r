@@ -7,7 +7,7 @@ def ping_url(website_url, delay, max_trials):
     while number_of_trials < max_trials:
         try:
             url_response = requests.get(website_url)
-            if requests.status_code == 200:
+            if url_response.status_code == 200:
                 print(f"Website {website_url} is reachable")
                 return True
         except ConnectionError:
